@@ -1,0 +1,129 @@
+
+body{
+    height: 100vh;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background:url(./image/image.png);
+    background-size:cover ;
+    
+}
+.title{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.rocky{
+    height: 120px;
+    width: 120px;
+    background-color: transparent;
+    border: 2px,solid,black;
+    border-radius: 100%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.icon{
+    height: 60px;
+    width: 60px;
+    transition: transform 0.3s ease;
+}
+.icon:hover{
+    transform: scale(1.1);
+}
+.result{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    
+}
+.score{
+    margin-top: 50px;
+}
+.reset-score{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: large;
+    background: rgba(255, 255, 255, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.auto{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    margin-top: 90px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    color: #000;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+/* Add this to your CSS file */
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.result-animate {
+  animation: dropIn 0.4s ease-out;
+}
+
+
+.reset-score:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.auto-play-button{
+  margin-top: 20px;
+    padding: 10px 20px;
+    font-size: large;
+    background: rgba(255, 255, 255, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.auto-play-button:hover{
+   background: rgba(255, 255, 255, 0.5);
+}
+
+.haa 
+,.naa{
+  cursor: pointer;
+  border: 0,solid,rgb(255, 255, 255);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.683);
+  margin-left:5px;
+  padding:6px;
+}
+
+.haa:hover
+,.naa:hover{
+  background: rgba(255, 255, 255, 0.952);
+}
+
+.messageToReset{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: whitesmoke;
+  padding-top: 10px;
+}
