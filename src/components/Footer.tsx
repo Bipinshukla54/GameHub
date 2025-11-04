@@ -25,16 +25,16 @@ export function Footer() {
           <div>
             <h3 className="mb-4 text-xl font-bold text-cyan-400">Connect With Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="p-3 transition-all duration-300 rounded-full bg-slate-700 hover:bg-cyan-600 hover:scale-110">
+              <a href="https://github.com/Bipinshukla54" className="p-3 transition-all duration-300 rounded-full bg-slate-700 hover:bg-cyan-600 hover:scale-110">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="#" className="p-3 transition-all duration-300 rounded-full bg-slate-700 hover:bg-cyan-600 hover:scale-110">
+              <a href="https://www.linkedin.com/in/bipin-shukla/" className="p-3 transition-all duration-300 rounded-full bg-slate-700 hover:bg-cyan-600 hover:scale-110">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="p-3 transition-all duration-300 rounded-full bg-slate-700 hover:bg-cyan-600 hover:scale-110">
+              <a href="mailto:shuklabipin0113@gmail.com" className="p-3 transition-all duration-300 rounded-full bg-slate-700 hover:bg-cyan-600 hover:scale-110">
                 <Mail className="w-5 h-5" />
               </a>
-              <a href="#" className="p-3 transition-all duration-300 rounded-full bg-slate-700 hover:bg-cyan-600 hover:scale-110">
+              <a href="https://instagram.com/bipin_shukla_54/" className="p-3 transition-all duration-300 rounded-full bg-slate-700 hover:bg-cyan-600 hover:scale-110">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>

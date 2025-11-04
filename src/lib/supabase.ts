@@ -12,7 +12,7 @@ export const gamesData: Game[] = [
     id: '7',
     title: 'Tic Tac Toe',
     description: 'A fun two-player game to challenge your friends!',
-    image_url: '/game/public/image copy.png',
+    image_url: '/image copy.png',
     game_url: '/Game/tictactoe/index.html ',
     category: 'Board Games'
   },
@@ -20,8 +20,8 @@ export const gamesData: Game[] = [
     id: '8',
     title: 'Rock Paper Scissor',
     description: 'Play Rock Paper Scissors against the computer!',
-    image_url: '/game/public/image.png',
-    game_url: '/RPS/RPS_practice.html ',
+    image_url: '/image.png',
+    game_url: 'game/RPS/RPS_practice.html ',
     category: 'digital'
   },
   {
