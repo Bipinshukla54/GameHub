@@ -21,7 +21,7 @@ export const gamesData: Game[] = [
     title: 'Rock Paper Scissor',
     description: 'Play Rock Paper Scissors against the computer!',
     image_url: '/image.png',
-    game_url: '/game/RPS/RPS_practice.html',
+    game_url: '/Game/RPS/RPS_practice.html',
     category: 'digital'
   },
   {

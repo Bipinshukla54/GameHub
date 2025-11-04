@@ -1,129 +1,204 @@
-
-body{
-    height: 100vh;
-    color: white;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: sans-serif;
-    background:url(./image/image.png);
-    background-size:cover ;
-    
-}
-.title{
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
+/* ===== GLOBAL STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.rocky{
-    height: 120px;
-    width: 120px;
-    background-color: transparent;
-    border: 2px,solid,black;
-    border-radius: 100%;
-    margin: 10px;
-    cursor: pointer;
+body {
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0a0a0f, #181829, #0c002b);
+  background-size: 300% 300%;
+  animation: bgShift 12s ease infinite;
 }
 
-.icon{
-    height: 60px;
-    width: 60px;
-    transition: transform 0.3s ease;
-}
-.icon:hover{
-    transform: scale(1.1);
-}
-.result{
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 15px;
-    
-}
-.score{
-    margin-top: 50px;
-}
-.reset-score{
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: large;
-    background: rgba(255, 255, 255, 0.2);
-    font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    cursor: pointer;
-
-}
-.auto{
-    background: rgba(255, 255, 255, 0.1);
-    padding: 40px;
-    margin-top: 90px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
-    color: #000;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+@keyframes bgShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
+/* ===== MAIN CONTAINER ===== */
+.auto {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  width: 90%;
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.auto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 50px rgba(0, 255, 255, 0.3);
+}
 
+/* ===== TITLE ===== */
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00ffff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ccff;
+}
 
-/* Add this to your CSS file */
-@keyframes dropIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px) scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+/* ===== GAME BUTTONS ===== */
+.rocky {
+  height: 140px;
+  width: 140px;
+  background: radial-gradient(circle, #111, #222);
+  border: 2px solid #00ffff;
+  border-radius: 50%;
+  margin: 15px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00ffff, inset 0 0 10px #00ffff;
+  transition: all 0.3s ease;
+}
+
+.rocky:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 25px #00ffff;
+}
+
+.icon {
+  height: 70px;
+  width: 70px;
+  transition: transform 0.3s ease;
+}
+
+.rocky:hover .icon {
+  transform: scale(1.1);
+}
+
+/* ===== TEXT & RESULTS ===== */
+.result {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #fff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.score {
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #0ff;
+}
+
+.js-moves {
+  margin-top: 15px;
 }
 
 .result-animate {
   animation: dropIn 0.4s ease-out;
 }
 
-
-.reset-score:hover {
-  background: rgba(255, 255, 255, 0.5);
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.auto-play-button{
+
+/* ===== CONTROL BUTTONS ===== */
+.reset-score, .auto-play-button {
   margin-top: 20px;
-    padding: 10px 20px;
-    font-size: large;
-    background: rgba(255, 255, 255, 0.2);
-    font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.auto-play-button:hover{
-   background: rgba(255, 255, 255, 0.5);
-}
-
-.haa 
-,.naa{
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #00ffff;
+  background: transparent;
+  border: 1px solid #00ffff;
+  border-radius: 8px;
   cursor: pointer;
-  border: 0,solid,rgb(255, 255, 255);
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.683);
-  margin-left:5px;
-  padding:6px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.haa:hover
-,.naa:hover{
-  background: rgba(255, 255, 255, 0.952);
+.reset-score:hover, .auto-play-button:hover {
+  background: #00ffff;
+  color: #000;
+  box-shadow: 0 0 20px #00ffff;
 }
 
-.messageToReset{
-  font-family: Arial, Helvetica, sans-serif;
+/* ===== CONFIRM BUTTONS ===== */
+.haa, .naa {
+  cursor: pointer;
+  border: 1px solid #00ffff;
+  border-radius: 6px;
+  background: transparent;
+  color: #00ffff;
+  margin-left: 6px;
+  padding: 6px 10px;
+  transition: all 0.3s ease;
+}
+
+.haa:hover, .naa:hover {
+  background: #00ffff;
+  color: #000;
+  box-shadow: 0 0 15px #00ffff;
+}
+
+/* ===== MESSAGE TO RESET ===== */
+.messageToReset {
+  margin-top: 15px;
   font-weight: 600;
-  color: whitesmoke;
-  padding-top: 10px;
+  color: #fff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .auto {
+    padding: 25px;
+    width: 95%;
+  }
+
+  .rocky {
+    height: 110px;
+    width: 110px;
+    margin: 10px;
+  }
+
+  .icon {
+    height: 55px;
+    width: 55px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .auto {
+    padding: 20px;
+  }
+
+  .rocky {
+    height: 90px;
+    width: 90px;
+  }
+
+  .icon {
+    height: 45px;
+    width: 45px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
 }

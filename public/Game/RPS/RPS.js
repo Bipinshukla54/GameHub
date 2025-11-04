@@ -56,9 +56,9 @@ const score=JSON.parse(localStorage.getItem('score')) ||
 
             document.querySelector('.js-result').innerHTML=`${result}`;
             document.querySelector('.js-moves').innerHTML=` You picked
-         <img src="../image/${playerMove}.png"  class="icon">
+         <img src="./image/${playerMove}.png"  class="icon">
          computer picked
-         <img src="../image/${computerMove}.png"  class="icon">
+         <img src="./image/${computerMove}.png"  class="icon">
          `;   
         
         const resultEl = document.querySelector('.js-result');
