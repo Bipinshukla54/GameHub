@@ -10,7 +10,7 @@ export function Header() {
               <img className="w-12 h-12" src="/gameground.png" alt="logo" />
             </div>
             <div>
-              <h1 className="text-3xl font-bold tracking-tight">GameHub</h1>
+              <h1 className="text-3xl font-bold tracking-tight">GameGround</h1>
               <p className="text-sm text-cyan-100">Your Ultimate Gaming Destination</p>
             </div>
           </div>

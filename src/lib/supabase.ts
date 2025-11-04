@@ -10,7 +10,7 @@ export interface Game {
 export const gamesData: Game[] = [
   {
     id: '7',
-    title: 'Tic Tac Toi',
+    title: 'Tic Tac Toe',
     description: 'A fun two-player game to challenge your friends!',
     image_url: '/image copy.png',
     game_url: '/Game/tictactoe/index.html',

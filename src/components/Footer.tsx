@@ -6,7 +6,7 @@ export function Footer() {
       <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div>
-            <h3 className="mb-4 text-xl font-bold text-cyan-400">GameHub</h3>
+            <h3 className="mb-4 text-xl font-bold text-cyan-400">GameGround</h3>
             <p className="leading-relaxed text-slate-300">
               Discover and play the best collection of online games. From classic puzzles to action-packed adventures, we've got something for everyone!
             </p>
@@ -50,7 +50,7 @@ export function Footer() {
             <Heart className="w-4 h-4 text-red-500 animate-pulse" />
             <span>for gamers worldwide</span>
           </p>
-          <p className="mt-2 text-sm text-slate-500">© 2025 GameHub. All rights reserved.</p>
+          <p className="mt-2 text-sm text-slate-500">© 2025 GameGround. All rights reserved.</p>
         </div>
       </div>
     </footer>
